@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EnJRizz - ENJOY RIZZ. Ayam Geprek buatan keluarga dan Butterscotch Nescafé racikan sendiri.">
+  <title>EnJRizz — ENJOY RIZZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div class="preloader" id="preloader">
+    <div class="pre-box">
+      <div class="pre-emoji">🌶️</div>
+      <div class="pre-logo">En<span>J</span>Rizz</div>
+      <p>ENJOY RIZZ</p>
+      <div class="pre-bar"><span></span></div>
+    </div>
+  </div>
+  <div class="progress" id="progress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <img class="logo-icon" src="logo.svg" alt="" onerror="this.remove()">
+        <div class="logo-text">
+          <span class="logo-name">En<span>J</span>Rizz</span>
+          <small>ENJOY RIZZ</small>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#ulasan">Ulasan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <span class="blob blob1"></span><span class="blob blob2"></span>
+      <span class="float-emoji e1">🌶️</span><span class="float-emoji e2">🍗</span>
+      <span class="float-emoji e3">☕</span><span class="float-emoji e4">🔥</span>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-brand">EnJRizz <span>“ENJOY RIZZ”</span></p>
+          <h1>Pedasnya Ayam Geprek, Manisnya Butterscotch.</h1>
+          <p>Menikmati ayam geprek buatan keluarga dengan sambal yang menggugah selera, ditemani Butterscotch Nescafé racikan sendiri.</p>
+          <p class="typing-line">Lagi pengen: <b id="typing"></b><i class="cursor"></i></p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+            <a href="#kontak" class="btn btn-outline">Pesan Sekarang</a>
+          </div>
+        </div>
+        <div class="hero-image img-box">
+          <img data-foto="ayam-kopi" src="ayam kopi.png" width="1200" height="803" onerror="this.style.display='none'" alt="Ayam Geprek dan Butterscotch Nescafé EnJRizz">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEKS BERJALAN ===== -->
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>🌶️ Ayam Geprek</span><span>☕ Butterscotch Nescafé</span><span>🔥 ENJOY RIZZ</span><span>🍗 Usaha Keluarga</span><span>🌶️ Ayam Geprek</span><span>☕ Butterscotch Nescafé</span><span>🔥 ENJOY RIZZ</span><span>🍗 Usaha Keluarga</span><span>🌶️ Ayam Geprek</span><span>☕ Butterscotch Nescafé</span><span>🔥 ENJOY RIZZ</span><span>🍗 Usaha Keluarga</span><span>🌶️ Ayam Geprek</span><span>☕ Butterscotch Nescafé</span><span>🔥 ENJOY RIZZ</span><span>🍗 Usaha Keluarga</span></div></div>
+
+    <!-- ===== TENTANG ===== -->
+    <section class="section about" id="tentang">
+      <div class="container about-grid">
+        <figure class="about-image img-box">
+          <img data-foto="restoran" src="restouran.jpg" width="1200" height="655" onerror="this.style.display='none'" alt="Ilustrasi konsep EnJRizz Ayam Geprek &amp; Coffee">
+        </figure>
+        <div class="about-text">
+          <h2>Tentang EnJRizz</h2>
+          <p>EnJRizz merupakan usaha makanan keluarga yang menjual ayam geprek sebagai menu utama. Ayam geprek dibuat oleh orang tua saya dengan tujuan menyediakan makanan yang sederhana, lezat, dan terjangkau.</p>
+          <p>Untuk melengkapi menu, saya membuat sendiri Butterscotch Nescafé sebagai minuman pendamping dengan perpaduan rasa kopi dan butterscotch.</p>
+          <p>Selain menu unggulan kami, EnJRizz juga menyediakan berbagai pilihan makanan dan minuman lainnya dengan cita rasa yang menarik untuk menemani setiap momen Anda.</p>
+          <div class="brand-note">
+            <strong>Arti nama EnJRizz</strong>
+            <p>Nama EnJRizz berasal dari kata ENJOY dan RIZZ. Rizz merupakan nama singkat atau panggilan belakang saya, sehingga EnJRizz menjadi identitas personal dalam usaha ini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu EnJRizz</h2>
+        <p class="section-sub">Pilih pedasmu, lalu tutup dengan yang manis.</p>
+
+        <h3 class="group-title"><span>🍗</span> Makanan</h3>
+        <div class="menu-grid">
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card best">
+            <span class="ribbon">🔥 Best Seller</span>
+            <div class="card-img img-box geprek-bg">
+              <img data-foto="geprek-tumpah" src="Geprek Tumpah.jpg" alt="Ayam Geprek Tumpah EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge">Menu Utama</span>
+              <h3>Ayam Geprek Tumpah</h3>
+              <p>Cabenya banyak banget sampai tumpah! Pilihan tepat untuk kamu yang suka pedas maksimal.</p>
+              
+              <div class="card-footer">
+                <span class="price">Rp 50.500</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-primary order-btn" data-produk="Ayam Geprek Tumpah" data-harga="50500">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box geprek-bg">
+              <img data-foto="geprek-mozarella" src="Moza.webp" alt="Ayam Geprek Mozarella EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge">Menu Utama</span>
+              <h3>Ayam Geprek Mozarella</h3>
+              <p>Ayam crispy dengan sambal geprek dan lelehan keju mozarella yang gurih, creamy, dan bikin nagih.</p>
+              
+              <div class="card-footer">
+                <span class="price">Rp 35.500</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-primary order-btn" data-produk="Ayam Geprek Mozarella" data-harga="35500">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box geprek-bg">
+              <img data-foto="geprek-cabe-ijo" src="sambal ijo.webp" alt="Ayam Geprek Cabe Ijo EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge">Menu Utama</span>
+              <h3>Ayam Geprek Cabe Ijo</h3>
+              <p>Ayam crispy dengan sambal cabe ijo yang segar, pedas, dan gurih.</p>
+              
+              <div class="card-footer">
+                <span class="price">Rp 34.500</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-primary order-btn" data-produk="Ayam Geprek Cabe Ijo" data-harga="34500">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box geprek-bg">
+              <img data-foto="geprek-matah" src="Matah.jpg" alt="Ayam Geprek Sambal Matah EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge">Menu Utama</span>
+              <h3>Ayam Geprek Sambal Matah</h3>
+              <p>Ayam crispy dengan sambal matah yang segar, wangi, dan pedasnya pas.</p>
+              
+              <div class="card-footer">
+                <span class="price">Rp 41.500</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-primary order-btn" data-produk="Ayam Geprek Sambal Matah" data-harga="41500">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box geprek-bg">
+              <img data-foto="geprek-kemangi" src="Kemangi.jpg" alt="Ayam Geprek Sambal Kemangi EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge">Menu Utama</span>
+              <h3>Ayam Geprek Sambal Kemangi</h3>
+              <p>Ayam crispy dengan sambal kemangi + ekstra sambal kemangi yang harum dan menggugah selera.</p>
+              
+              <div class="card-footer">
+                <span class="price">Rp 45.500</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-primary order-btn" data-produk="Ayam Geprek Sambal Kemangi" data-harga="45500">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box geprek-bg">
+              <img data-foto="geprek-madura" src="Madura.jpg" alt="Ayam Geprek Sambal Hitam Madura EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge">Menu Utama</span>
+              <h3>Ayam Geprek Sambal Hitam Madura</h3>
+              <p>Ayam crispy dengan sambal hitam khas Madura yang pekat, pedas, dan gurih.</p>
+              
+              <div class="card-footer">
+                <span class="price">Rp 48.000</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-primary order-btn" data-produk="Ayam Geprek Sambal Hitam Madura" data-harga="48000">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="group-title drink"><span>🥤</span> Minuman</h3>
+        <div class="menu-grid">
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card best">
+            <span class="ribbon">🔥 Best Seller</span>
+            <div class="card-img img-box butter-bg">
+              <img data-foto="butterscotch" src="ButterScotch.avif" alt="Butterscotch Nescafé EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge badge-brown">Minuman</span>
+              <h3>Butterscotch Nescafé</h3>
+              <p>Minuman kopi dengan perpaduan Nescafé dan rasa butterscotch yang manis, creamy, dan cocok menjadi teman makan.</p>
+              <div class="opsi"><div class="opsi-grup" data-nama="Suhu"><span class="opsi-label">Suhu</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Dingin">❄️ Dingin</button><button type="button" class="chip" data-nilai="Panas">🔥 Panas</button></div></div><div class="opsi-grup" data-nama="Gula"><span class="opsi-label">Gula</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Gula Normal">Normal</button><button type="button" class="chip" data-nilai="Less Sugar">Less Sugar</button></div></div><div class="opsi-grup" data-nama="Es"><span class="opsi-label">Es</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Es Normal">Normal</button><button type="button" class="chip" data-nilai="Less Ice">Less Ice</button></div></div></div>
+              <div class="card-footer">
+                <span class="price price-brown">Rp 28.000</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-brown order-btn" data-produk="Butterscotch Nescafé" data-harga="28000">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box butter-bg">
+              <img data-foto="matcha-latte" src="Matcha.jpg" alt="Matcha Latte EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge badge-brown">Minuman</span>
+              <h3>Matcha Latte</h3>
+              <p>Matcha creamy dengan susu yang lembut, segar dan nggak bikin enek.</p>
+              <div class="opsi"><div class="opsi-grup" data-nama="Suhu"><span class="opsi-label">Suhu</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Dingin">❄️ Dingin</button><button type="button" class="chip" data-nilai="Panas">🔥 Panas</button></div></div><div class="opsi-grup" data-nama="Gula"><span class="opsi-label">Gula</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Gula Normal">Normal</button><button type="button" class="chip" data-nilai="Less Sugar">Less Sugar</button></div></div><div class="opsi-grup" data-nama="Es"><span class="opsi-label">Es</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Es Normal">Normal</button><button type="button" class="chip" data-nilai="Less Ice">Less Ice</button></div></div></div>
+              <div class="card-footer">
+                <span class="price price-brown">Rp 24.000</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-brown order-btn" data-produk="Matcha Latte" data-harga="24000">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box butter-bg">
+              <img data-foto="orange-vanila" src="Orange.jpg" alt="Orange Vanila Cream EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge badge-brown">Minuman</span>
+              <h3>Orange Vanila Cream</h3>
+              <p>Jeruk segar bertemu vanila cream yang manis dan lembut.</p>
+              <div class="opsi"><div class="opsi-grup" data-nama="Gula"><span class="opsi-label">Gula</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Gula Normal">Normal</button><button type="button" class="chip" data-nilai="Less Sugar">Less Sugar</button></div></div><div class="opsi-grup" data-nama="Es"><span class="opsi-label">Es</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Es Normal">Normal</button><button type="button" class="chip" data-nilai="Less Ice">Less Ice</button></div></div></div>
+              <div class="card-footer">
+                <span class="price price-brown">Rp 18.000</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-brown order-btn" data-produk="Orange Vanila Cream" data-harga="18000">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box butter-bg">
+              <img data-foto="leci-tea" src="Lechi.jpg" alt="Iced Leci Tea EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge badge-brown">Minuman</span>
+              <h3>Iced Leci Tea</h3>
+              <p>Teh dingin dengan rasa leci yang manis dan menyegarkan.</p>
+              <div class="opsi"><div class="opsi-grup" data-nama="Gula"><span class="opsi-label">Gula</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Gula Normal">Normal</button><button type="button" class="chip" data-nilai="Less Sugar">Less Sugar</button></div></div><div class="opsi-grup" data-nama="Es"><span class="opsi-label">Es</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Es Normal">Normal</button><button type="button" class="chip" data-nilai="Less Ice">Less Ice</button></div></div></div>
+              <div class="card-footer">
+                <span class="price price-brown">Rp 12.000</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-brown order-btn" data-produk="Iced Leci Tea" data-harga="12000">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- HARGA: ubah 2 tempat (tulisan harga & data-harga) -->
+          <article class="card product-card">
+            <div class="card-img img-box butter-bg">
+              <img data-foto="sweet-tea" src="Sweet Tea.jpg" alt="Iced Sweet Tea EnJRizz" width="800" height="600" onerror="this.style.display='none'">
+            </div>
+            <div class="card-body">
+              <span class="badge badge-brown">Minuman</span>
+              <h3>Iced Sweet Tea</h3>
+              <p>Teh manis dingin klasik, paling pas buat teman makan ayam geprek.</p>
+              <div class="opsi"><div class="opsi-grup" data-nama="Gula"><span class="opsi-label">Gula</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Gula Normal">Normal</button><button type="button" class="chip" data-nilai="Less Sugar">Less Sugar</button></div></div><div class="opsi-grup" data-nama="Es"><span class="opsi-label">Es</span><div class="chips"><button type="button" class="chip aktif" data-nilai="Es Normal">Normal</button><button type="button" class="chip" data-nilai="Less Ice">Less Ice</button></div></div></div>
+              <div class="card-footer">
+                <span class="price price-brown">Rp 5.000</span>
+                <div class="qty" aria-label="Jumlah pesanan">
+                  <button type="button" class="qty-btn" data-aksi="kurang" aria-label="Kurangi jumlah">−</button>
+                  <span class="qty-num">1</span>
+                  <button type="button" class="qty-btn" data-aksi="tambah" aria-label="Tambah jumlah">+</button>
+                </div>
+                <button class="btn btn-brown order-btn" data-produk="Iced Sweet Tea" data-harga="5000">Pesan Sekarang</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="foto-note">*Foto menu bersifat ilustrasi, tampilan asli dapat sedikit berbeda.</p><!-- hapus baris ini jika semua foto adalah foto asli -->
+      </div>
+    </section>
+
+    <!-- ===== KEUNGGULAN ===== -->
+    <section class="section" id="keunggulan">
+      <div class="container">
+        <h2 class="section-title">Kenapa Pilih EnJRizz?</h2>
+        <div class="feature-grid">
+          <div class="card feature-card"><div class="icon">🍗</div><h3>Ayam Geprek Fresh</h3><p>Ayam geprek dengan kualitas bahan yang terjaga, diolah untuk menghadirkan hidangan lezat di setiap sajian.</p></div>
+          <div class="card feature-card"><div class="icon">🌶️</div><h3>Sambal Menggugah Selera</h3><p>Perpaduan rasa pedas dan gurih yang menambah kenikmatan di setiap gigitan ayam geprek EnJRizz.</p></div>
+          <div class="card feature-card"><div class="icon">☕</div><h3>Minuman Racikan Sendiri</h3><p>Nikmati Butterscotch Nescafé buatan sendiri dengan perpaduan cita rasa kopi dan manisnya butterscotch sebagai teman santap favoritmu.</p></div>
+          <div class="card feature-card"><div class="icon">🏠</div><h3>Usaha Keluarga</h3><p>Dibangun dengan semangat dan kerja keras keluarga, EnJRizz hadir untuk menyajikan produk berkualitas dengan pelayanan sepenuh hati.</p></div></div>
+        <div class="card feature-card"><div class="icon">📋</div><h3>Menu Lainnya</h3><p>Jelajahi beragam pilihan menu lainnya dengan cita rasa istimewa yang siap memanjakan seleramu di setiap kesempatan bersama EnJRizz.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ULASAN ===== -->
+    <section class="section reviews" id="ulasan">
+      <div class="container">
+        <h2 class="section-title">Kata Mereka</h2>
+        <p class="section-sub">Ulasan dari teman-teman sekolah yang sudah mencoba.</p>
+        <div class="review-grid">
+          <figure class="card review-card">
+            <div class="stars" aria-label="Bintang 5 dari 5">★★★★★</div>
+            <blockquote>“Ayamnya enak, sambalnya juga pas. Paling suka Ayam Geprek Tumpahnya, apalagi kalau dimakan bareng nasi hangat.”</blockquote>
+            <figcaption><span class="avatar">R</span><span><b>Rizki Naufal</b><small>Teman sekolah</small></span></figcaption>
+          </figure>
+          <figure class="card review-card">
+            <div class="stars" aria-label="Bintang 5 dari 5">★★★★★</div>
+            <blockquote>“Butterscotch Nescafé-nya enak, rasa kopinya masih terasa dan manisnya pas. Cocok diminum sambil makan atau pas lagi santai.”</blockquote>
+            <figcaption><span class="avatar">G</span><span><b>Galuh</b><small>Teman sekolah</small></span></figcaption>
+          </figure>
+          <figure class="card review-card">
+            <div class="stars" aria-label="Bintang 5 dari 5">★★★★★</div>
+            <blockquote>“Menurutku harganya masih ramah di kantong, porsinya juga cukup. Cocok buat makan siang bareng teman-teman sekolah.”</blockquote>
+            <figcaption><span class="avatar">A</span><span><b>Aditya</b><small>Teman sekolah</small></span></figcaption>
+          </figure>
+          <figure class="card review-card">
+            <div class="stars" aria-label="Bintang 5 dari 5">★★★★★</div>
+            <blockquote>“Ayam Geprek Mozarella-nya jadi favoritku. Ayamnya gurih, kejunya juga lumer banget! bikin rasanya makin enak. Bakal pengin beli lagi.”</blockquote>
+            <figcaption><span class="avatar">D</span><span><b>Dzaky</b><small>Teman sekolah</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="cta">
+      <div class="container">
+        <h2>Lapar? Yuk, Cobain EnJRizz!</h2>
+        <p>Nikmati Ayam Geprek buatan keluarga dan Butterscotch Nescafé racikan sendiri.</p>
+        <a href="#kontak" class="btn btn-light">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section class="section contact" id="kontak">
+      <div class="container">
+        <h2 class="section-title">Hubungi EnJRizz</h2>
+        <div class="contact-grid">
+          <div class="card contact-info">
+            <h3>EnJRizz — ENJOY RIZZ</h3>
+            <ul>
+              <li><strong>WhatsApp</strong> 085659856433</li>
+              <li><strong>Instagram</strong> @enjrizzz</li>
+              <li><strong>Alamat</strong> Jln MaharMartanegara Gg.Samudra 1 NO.189 RT.05 RW.17 Warung Ghefira Kab.Bandung Kel.Cibeureum Kec.Cimahi Selatan.</li>
+            </ul>
+            <!-- Nomor WhatsApp diatur di script.js (NOMOR_WA). Link di bawah otomatis ikut. -->
+            <a href="https://wa.me/6285659856433" data-wa target="_blank" rel="noopener" class="btn btn-primary">Pesan via WhatsApp</a>
+          </div>
+          <form class="card contact-form" id="contact-form" novalidate>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama kamu">
+            <label for="email">Email (opsional)</label>
+            <input type="email" id="email" placeholder="email@contoh.com">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" rows="4" placeholder="Tulis pesan kamu"></textarea>
+            <button type="submit" class="btn btn-primary">Kirim via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div class="f-brand">
+        <a href="#home" class="f-logo"><img src="images/logo.svg" alt="" onerror="this.remove()"><span>En<span>J</span>Rizz</span></a>
+        <p class="footer-tag">“ENJOY RIZZ”</p>
+        <p>Ayam geprek buatan keluarga dan Butterscotch Nescafé racikan sendiri. Sederhana, lezat, dan terjangkau.</p>
+        <div class="f-social">
+          <a href="https://wa.me/6285659856433" data-wa target="_blank" rel="noopener" aria-label="WhatsApp EnJRizz">💬 WhatsApp</a>
+          <a href="https://instagram.com/enjrizzz" target="_blank" rel="noopener" aria-label="Instagram EnJRizz">📸 Instagram</a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Jelajahi</h4>
+        <ul class="f-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#ulasan">Ulasan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Jam Buka</h4>
+        <!-- GANTI jam buka sesuai kenyataan -->
+        <ul class="f-hours">
+          <li><span>Senin – Minggu</span><b>10.00 – 21.00</b></li>
+        </ul>
+        <p class="f-note">Pesan lewat WhatsApp kapan saja.</p>
+      </div>
+      <div class="f-col">
+        <h4>Hubungi Kami</h4>
+        <ul class="f-contact">
+          <li>📞 085659856433</li>
+          <li>📸 @enjrizzz</li>
+          <li>📍 Jln MaharMartanegara Gg.Samudra 1 NO.189 RT.05 RW.17, Kel.Cibeureum, Kec.Cimahi Selatan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p class="copy">© 2026 EnJRizz. Semua hak dilindungi.</p>
+      <p class="copy">Jualan Orang Tua Sendiri · Dibuat dengan 🌶️ dan ☕</p>
+    </div>
+  </footer>
+
+  <!-- Keranjang pesanan -->
+  <button class="cart-fab" id="cart-fab" aria-label="Buka keranjang">🛒<span id="cart-count">0</span></button>
+  <aside class="cart" id="cart" aria-label="Keranjang pesanan">
+    <div class="cart-head"><h3>Keranjang Kamu</h3><button id="cart-close" aria-label="Tutup keranjang">✕</button></div>
+    <ul id="cart-list"></ul>
+    <p class="cart-total">Total: <b id="cart-total">Rp 0</b></p>
+    <!-- Nomor WhatsApp diatur di script.js (variabel NOMOR_WA) -->
+    <a href="#" id="cart-wa" class="btn btn-primary" target="_blank" rel="noopener">Kirim Pesanan ke WhatsApp</a>
+    <button class="btn btn-outline" id="cart-clear" type="button">Kosongkan</button>
+  </aside>
+  <button class="to-top" id="to-top" aria-label="Kembali ke atas">↑</button>
+
+  <!-- Notifikasi -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="foto.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
